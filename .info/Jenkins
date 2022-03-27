@@ -51,7 +51,7 @@ pipeline {
                 stages {
                     stage('BuildAndTest') {
                         steps {
-                            git 'https://github.com/Varulv1997/Laskutus_Finn_Ilmaista'
+                            git 'https://github.com/Rostov1991/Laskutus_Finn_Ilmaista'
                             sh "git clean -fxd"
                             sh "mvn verify spotbugs:check checkstyle:check -Pfull-build -Dsurefire-forkcount=4"
                         }
